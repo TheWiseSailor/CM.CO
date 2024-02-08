@@ -90,6 +90,7 @@ body {
     top: 100%;
 left: 79%;
 max-width: 100%;
+/* this was done because the user has better ease of acces to the mobile nav menu for better UI and UX */
 overflow-x: hidden;
     background-color:transparent;
 
