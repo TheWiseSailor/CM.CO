@@ -1,9 +1,15 @@
-.header {
-  background-color: #fff;
+.HeaderPrimary{
+  background-color: #1ab91a;
   padding: 20px 0;
   transition: background-color 0.3s ease;
   position: relative;
   z-index: 1000;
+
+}
+
+.header {
+  margin:0 auto;
+  max-width: 1500px;
 }
 
 .sticky {
@@ -38,6 +44,8 @@
   padding: 0;
   margin: 0;
   display: flex;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 

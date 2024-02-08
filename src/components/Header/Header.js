@@ -12,6 +12,7 @@ const Header = () => {
   };
 
   return (
+    <div className='HeaderPrimary'>
     <header className={`header ${isSticky ? 'sticky' : ''}`}>
       <div className="container">
         <div className="logo">Logo</div>
@@ -27,6 +28,7 @@ const Header = () => {
         </div>
       </div>
     </header>
+    </div>
   );
 };
 
