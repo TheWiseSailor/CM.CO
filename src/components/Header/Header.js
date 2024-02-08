@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './Header.css';
 import MMI from './HeaderImages/MobileMenuIcon.png';
+import { Link } from 'react-router-dom'; 
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -13,21 +14,19 @@ const Header = () => {
 
   return (
     <div className='HeaderPrimary'>
-    <header className={`header ${isSticky ? 'sticky' : ''}`}>
-      <div className="container">
-        <div className="logo">CM.CO</div>
-        <nav className={`navbar ${isMobileMenuOpen ? 'open' : ''}`}>
-          <ul>
-          
-            <li><a href="#">Contact</a></li>
-
-          </ul>
-        </nav>
-        <div className={`mobile-menu-icon ${isMobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>
-          <img src={MMI} alt="Mobile Menu" className='MMI-icon'/>
+      <header className={`header ${isSticky ? 'sticky' : ''}`}>
+        <div className="container">
+          <Link to="/" className="logo">CM.CO</Link>
+          <nav className={`navbar ${isMobileMenuOpen ? 'open' : ''}`}>
+            <ul>
+              <li><Link to="/Contact">Contact</Link></li> 
+            </ul>
+          </nav>
+          <div className={`mobile-menu-icon ${isMobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>
+            <img src={MMI} alt="Mobile Menu" className='MMI-icon'/>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
     </div>
   );
 };

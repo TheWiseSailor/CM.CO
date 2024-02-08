@@ -3,7 +3,7 @@ body {
   overflow-x: hidden;
 }
 .HeaderPrimary{
-background-color: transparent;
+  background-color: #93b7c4 !important;
   padding: 20px 0;
   transition: background-color 0.3s ease;
   position: relative;

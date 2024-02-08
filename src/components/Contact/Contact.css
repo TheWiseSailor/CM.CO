@@ -1,0 +1,104 @@
+.contact-container-form-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #93b7c4 !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+.ContactHomePageHeader-container-page{
+  text-align: center;
+}
+.contact-form-container-page {
+  margin-top: -100px;
+  width: 60%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 28px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  margin-bottom: 15px;
+  
+}
+
+.button-container-page {
+  background-color: #2196f3;
+  color: white;
+  padding: 14px 0;
+  border: none;
+  border-radius: 26px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 150px;
+  margin: 0 auto;
+  transition: background-color 0.9s ease;
+  margin-top: 20px;
+}
+
+.button-container-page:hover {
+  background-color: #4caf50;
+}
+
+.confirmation-message-container {
+  background-color: #4caf50;
+  color: white;
+  padding: 25px;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+input,
+textarea {
+  padding-left: 10px;
+
+  outline: none;
+  border: 2px solid rgb(247, 188, 78);
+  border-radius: 30px;
+  resize: vertical;
+  width: 350px; 
+  margin: 0 auto !important; 
+  margin-top: 15px !important;
+}
+@media screen and (max-width: 600px) {
+  input,
+  textarea {
+    width: 180px; 
+  }
+}
+
+
+.SuccessMessage{
+  background-color: rgb(18, 230, 18);
+  margin: 0 auto;
+padding-top: 20px;
+  text-align: center;
+  min-height: 170px;
+  max-width: 230px;
+border-radius: 30px;
+font-weight: bold;
+font-size: 30px;
+}
+.SuccessMessageBackground{
+  background-color: antiquewhite;
+  height: 100vh;
+  padding-top: 400px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 767px) {
+  .SuccessMessageBackground {
+    padding-top: 200px;
+  }
+}
