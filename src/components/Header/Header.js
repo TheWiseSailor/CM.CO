@@ -1,7 +1,7 @@
+// <a href='https://pngtree.com/freepng/rhino-modeling-gamepad_5972565.html'>png image from pngtree.com/</a>
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import './Header.css'; 
+import './Header.css';
+import MMI from './HeaderImages/MobileMenuIcon.png';
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -20,11 +20,10 @@ const Header = () => {
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
-
           </ul>
         </nav>
         <div className={`mobile-menu-icon ${isMobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>
-          <FontAwesomeIcon icon={faBars} />
+          <img src={MMI} alt="Mobile Menu" className='MMI-icon'/>
         </div>
       </div>
     </header>

@@ -58,7 +58,9 @@
 .mobile-menu-icon {
   display: none;
 }
-
+.MMI-icon{
+  height: 45px;
+}
 .container .navbar.open ul,
 .container .navbar.open {
   display: flex;
