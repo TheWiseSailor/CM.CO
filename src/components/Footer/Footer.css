@@ -1,0 +1,14 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1ab91a;
+  font-weight: bolder;
+  font-size: larger;
+  text-align: center;
+  max-height: 30px;
+padding-bottom: 15px;
+}
+.ft{
+  margin-top: 9px !important;
+}
