@@ -5,6 +5,8 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import RenderPages from "./components/RenderPages"; 
 import ContactFormPage from "./components/Contact/Contact"; 
+import EsportsPage from "./components/Esports/Esports"; 
+
 import './app.css'
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path="/" element={<RenderPages />} /> 
           <Route path="/JE.CO" element={<RenderPages />} /> 
           <Route path="/contact" element={<ContactFormPage />} /> 
+          <Route path="/Esports" element={<EsportsPage />} /> 
+
         </Routes>
         <Footer />
       </Router>

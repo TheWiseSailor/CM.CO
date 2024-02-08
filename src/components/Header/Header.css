@@ -88,8 +88,8 @@ body {
     flex-direction: column;
     position: absolute;
     top: 100%;
-    left: 0;
-min-width: 100%;
+left: 79%;
+max-width: 100%;
 overflow-x: hidden;
     background-color:transparent;
 
