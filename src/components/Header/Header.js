@@ -1,12 +1,21 @@
 // <a href='https://pngtree.com/freepng/rhino-modeling-gamepad_5972565.html'>png image from pngtree.com/</a>
-import React, { useState } from 'react';
+
+import React, { useState, useEffect } from 'react';
 import './Header.css';
 import MMI from './HeaderImages/MobileMenuIcon.png';
-import { Link } from 'react-router-dom'; 
+import { Link, useLocation } from 'react-router-dom'; 
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isEsportsClicked, setIsEsportsClicked] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+
+    setIsEsportsClicked(location.pathname === "/Esports");
+  }, [location]);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -14,14 +23,13 @@ const Header = () => {
 
   return (
     <div className='HeaderPrimary'>
-      <header className={`header ${isSticky ? 'sticky' : ''}`}>
+      <header className={`header ${isSticky ? 'sticky' : ''} ${isEsportsClicked ? 'esports' : ''}`}>
         <div className="container">
           <Link to="/" className="logo">CM.CO</Link>
           <nav className={`navbar ${isMobileMenuOpen ? 'open' : ''}`}>
             <ul>
-            <li><Link to="/Esports">Esports</Link></li> 
+              <li><Link to="/Esports">Esports</Link></li> 
               <li><Link to="/Contact">Contact</Link></li> 
-            
             </ul>
           </nav>
           <div className={`mobile-menu-icon ${isMobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>
