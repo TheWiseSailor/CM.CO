@@ -15,7 +15,7 @@ const Header = () => {
     <div className='HeaderPrimary'>
     <header className={`header ${isSticky ? 'sticky' : ''}`}>
       <div className="container">
-        <div className="logo">Logo</div>
+        <div className="logo">CM.CO</div>
         <nav className={`navbar ${isMobileMenuOpen ? 'open' : ''}`}>
           <ul>
             <li><a href="#">Home</a></li>
