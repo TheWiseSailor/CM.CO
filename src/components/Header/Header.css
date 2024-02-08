@@ -55,7 +55,7 @@
 
 .navbar ul li a {
   text-decoration: none;
-  color: #333;
+  color: #000000;
   transition: color 0.3s ease;
 }
 
@@ -83,13 +83,15 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #f8f9fa;
+    background-color: #000000;
     padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
   }
 
+  .navbar ul li a {
+    text-decoration: none;
+    color: #1ab91a;
+    transition: color 0.3s ease;
+  }
   .mobile-menu-icon {
     display: block;
     cursor: pointer;
