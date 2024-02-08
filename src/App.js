@@ -4,13 +4,14 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import RenderPages from "./components/RenderPages"; 
-import ContactFormPage from "./components/Contact/Contact"; // Corrected import path
-
+import ContactFormPage from "./components/Contact/Contact"; 
+import './app.css'
 function App() {
   return (
     <div className="app-container">
       <Router>
         <Header />
+  
         <Routes>
           <Route path="/" element={<RenderPages />} /> 
           <Route path="/JE.CO" element={<RenderPages />} /> 
