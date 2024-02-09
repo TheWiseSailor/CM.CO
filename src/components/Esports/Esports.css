@@ -2,19 +2,18 @@
   font-family: Arial, sans-serif;
   text-align: center;
 }
-
-.esports-header {
-  background-color: #333;
-  color: white;
-  padding: 20px 0;
+.EB{
+  background-color: black;
+min-height: 100vh;
 }
-
 .esports-main {
   display: flex;
   justify-content: space-around;
-  margin: 20px 0;
 }
-
+.EH1{
+padding-top: 550px;
+  color: rgb(255, 255, 255);
+}
 .esports-topic {
   flex: 1;
 }

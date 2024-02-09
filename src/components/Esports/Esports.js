@@ -3,9 +3,10 @@ import './Esports.css';
 
 function EsportsPage() {
   return (
+    <div className='EB'>
     <div className="esports-page">
       <header>
-        <h1>Esports</h1>
+        <h1 className='EH1'>Esports</h1>
       </header>
       <main>
         <section className="topic">
@@ -21,7 +22,7 @@ function EsportsPage() {
           <p>Third</p>
         </section>
       </main>
-
+      </div>
     </div>
   );
 }

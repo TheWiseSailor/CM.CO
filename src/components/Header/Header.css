@@ -15,12 +15,17 @@ body {
   margin:0 auto;
 
 }
+.HeaderPrimary.esports{
+  color: black;
+}
 .header.esports {
   position: relative;
-  background-color: green;
+ 
+  background-color: rgb(23, 184, 23);
   
 margin-top: -20px;
 padding:20px;
+margin-bottom: -45px;
 
 }
 .sticky {
@@ -42,10 +47,12 @@ padding:20px;
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #ffffff;
+  color: #ffe9e9;
   text-decoration: none;
 }
-
+.logo:hover {
+  color: rgb(0, 0, 0); 
+}
 
 .navbar {
   flex: 1;
@@ -69,12 +76,12 @@ padding:20px;
 
 .navbar ul li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #ffe7e7;
   transition: color 0.3s ease;
 }
 
 .navbar ul li a:hover {
-  color: #007bff;
+  color: #000000;
 }
 
 .mobile-menu-icon {
@@ -95,7 +102,7 @@ padding:20px;
     flex-direction: column;
     position: absolute;
     top: 100%;
-left: 79%;
+left: 75%;
 max-width: 100%;
 /* this was done because the user has better ease of acces to the mobile nav menu for better UI and UX */
 overflow-x: hidden;

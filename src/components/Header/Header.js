@@ -8,13 +8,12 @@ import { Link, useLocation } from 'react-router-dom';
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isEsportsClicked, setIsEsportsClicked] = useState(false);
+  const [isEsportsPage, setIsEsportsPage] = useState(false);
 
   const location = useLocation();
 
   useEffect(() => {
-
-    setIsEsportsClicked(location.pathname === "/Esports");
+    setIsEsportsPage(location.pathname === "/Esports");
   }, [location]);
 
   const toggleMobileMenu = () => {
@@ -23,11 +22,11 @@ const Header = () => {
 
   return (
     <div className='HeaderPrimary'>
-      <header className={`header ${isSticky ? 'sticky' : ''} ${isEsportsClicked ? 'esports' : ''}`}>
+      <header className={`header ${isSticky ? 'sticky' : ''} ${isEsportsPage ? 'esports' : ''}`}>
         <div className="container">
           <Link to="/" className="logo">CM.CO</Link>
           <nav className={`navbar ${isMobileMenuOpen ? 'open' : ''}`}>
-            <ul>
+            <ul className={isEsportsPage ? 'esports-page' : ''}>
               <li><Link to="/Esports">Esports</Link></li> 
               <li><Link to="/Contact">Contact</Link></li> 
             </ul>
