@@ -35,6 +35,7 @@
   max-width: 50%;
   border-top-left-radius: 150px;
   border-bottom-right-radius: 150px;
+  max-height: 60vh;
 }
 .Esports-text-overlay {
   position: absolute;
