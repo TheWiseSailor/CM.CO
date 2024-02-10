@@ -17,6 +17,7 @@ function EsportsPage() {
           </div>
 
           <div className="AboutMe-content">
+            <div className='AboutMeBanner'> About Me</div>
             <div className="content-wrapper">
               <img src={ProfileImage} alt="Profile" className='ES2' />
               <p className='AboutMe'>
@@ -25,6 +26,7 @@ function EsportsPage() {
             </div>
           </div>
           <div className="Esports-content">
+          <div className='AboutEsports'> About UNCW Esports</div>
             <div className="content-wrapper">
               <p className='AboutUs'>
                 At UNCW Esports, we're a dynamic community that embraces creativity and technology, extending beyond traditional filmmaking to competitive gaming. With teams in Smash, Halo, Call of Duty, Apex Legends, Valorant, League of Legends, and Rocket League, students immerse themselves in esports, honing skills and building friendships. Our members embody innovation and collaboration, shaping the future of cinema and gaming. Welcome to UNCW Esports, where creativity knows no bounds.              

@@ -49,6 +49,7 @@
   padding: 10px; 
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); 
 }
+
 /* ABOUT US SECTION */
 .AboutUs-overlay {
   position: absolute;
@@ -62,6 +63,36 @@
 font-size: 30px;
 
 
+}
+/* ABOUT ME SECTION */
+
+/* .ES2{
+  max-width: 50%;
+  border-top-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+} */
+.AboutMeBanner{
+  min-width: 100vw;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top:-10px;
+font-weight: bolder;
+font-size: 30px;
+  background-color: black;
+  color: rgb(255, 215, 0);
+}
+/* ABOUTESPORTS SECTION */
+
+
+.AboutEsports{
+min-width: 100vw;
+padding-top: 30px;
+padding-bottom: 30px;
+margin-top:-10px;
+font-weight: bolder;
+font-size: 30px;
+background-color: black;
+color: rgb(255, 215, 0);
 }
 
 /* ABOUT US SECTION END */
@@ -123,10 +154,23 @@ padding-top: 50px;
 @media (min-width: 1500px) {
   .AboutUs {
       margin-right: 50px;
-
   }
   .AboutMe {
     margin-left: 50px;
+}
+.AboutMe-content{
+  padding-bottom: 100px;
+
+}
+.AboutMeBanner{
+  margin-bottom: 100px;}
+.Esports-content{
+
+  padding-bottom: 100px;
+
+}
+.AboutEsports{
+  margin-bottom: 100px;
 
 }
 }
