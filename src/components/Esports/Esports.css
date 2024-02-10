@@ -32,7 +32,7 @@
   border-bottom-right-radius: 150px;
 }
 .ES2{
-  max-width: 50%;
+  min-width: 40%;
   border-top-left-radius: 150px;
   border-bottom-right-radius: 150px;
   max-height: 60vh;
