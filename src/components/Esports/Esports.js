@@ -47,9 +47,12 @@ function EsportsPage() {
             </div>
           </div>
           {/* CONTACT FORM */}
+          
           <div className="EsportsContactPage">
+            
             <div className="EsportsContactSection">
               <div className="ContactText" data-aos="fade-down" data-aos-duration="3000">
+       
                 <h2 className="ContactEsports-container-page">Contact</h2>
                 <p>Contact us for any inquiries:</p>
               </div>
