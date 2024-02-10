@@ -30,8 +30,11 @@
   max-width: 50%;
   border-top-left-radius: 150px;
   border-bottom-right-radius: 150px;
-
-
+}
+.ES2{
+  max-width: 50%;
+  border-top-left-radius: 150px;
+  border-bottom-right-radius: 150px;
 }
 .Esports-text-overlay {
   position: absolute;
