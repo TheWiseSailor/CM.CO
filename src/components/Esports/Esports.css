@@ -122,6 +122,58 @@ color: rgb(255, 215, 0);
 padding-bottom: 70px;
 padding-top: 50px;
 }
+
+
+.EsportsContactPage {
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+.EsportsContactSection {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 500px;
+  height: 500px;
+}
+
+.ContactText {
+  color: rgb(255, 215, 0);
+}
+
+.EsportsContactForm {
+  margin: 0 auto;
+  color: rgb(255, 215, 0);
+  border-radius: 30px !important;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 400px;
+  min-width: 400px;
+}
+
+.EsportsContactForm input,
+.EsportsContactForm textarea {
+  display: block;
+  width: 60%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .EsportsContactSection {
+    flex-direction: column;
+  }
+
+  .EsportsContactForm {
+    min-width: 300px;
+    min-height: 350px;
+    border-radius: 30px;
+  }
+}
+
+
+
 @media only screen and (max-width: 768px) {
   .Esports-E1 {
     height: auto;

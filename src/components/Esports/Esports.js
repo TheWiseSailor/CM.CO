@@ -1,10 +1,22 @@
 import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+
 import './Esports.css';
 import EBImage from '../Esports/EsportsImages/EB.png';
 import ES1Image from '../Esports/EsportsImages/ES1.png'; 
 import ProfileImage from '../Esports/EsportsImages/ES2.png'; 
 
 function EsportsPage() {
+  const [state, handleSubmit] = useForm("bklsesef");
+
+  if (state.succeeded) {
+    return (
+      <div className='SuccessMessageBackground'>
+        <p className='SuccessMessage'>Success!<br/> I will be in touch!</p>
+      </div>
+    );
+  }
+
   return (
     <div className='Esports-EB'>
       <div className="esports-page">
@@ -26,7 +38,7 @@ function EsportsPage() {
             </div>
           </div>
           <div className="Esports-content">
-          <div className='AboutEsports'> About UNCW Esports</div>
+            <div className='AboutEsports'> About UNCW Esports</div>
             <div className="content-wrapper">
               <p className='AboutUs'>
                 At UNCW Esports, we're a dynamic community that embraces creativity and technology, extending beyond traditional filmmaking to competitive gaming. With teams in Smash, Halo, Call of Duty, Apex Legends, Valorant, League of Legends, and Rocket League, students immerse themselves in esports, honing skills and building friendships. Our members embody innovation and collaboration, shaping the future of cinema and gaming. Welcome to UNCW Esports, where creativity knows no bounds.              
@@ -34,7 +46,30 @@ function EsportsPage() {
               <img src={ES1Image} alt="ES1" className='ES1-image' />
             </div>
           </div>
-         
+          {/* CONTACT FORM */}
+          <div className="EsportsContactPage">
+            <div className="EsportsContactSection">
+              <div className="ContactText" data-aos="fade-down" data-aos-duration="3000">
+                <h2 className="ContactEsports-container-page">Contact</h2>
+                <p>Contact us for any inquiries:</p>
+              </div>
+              <div className="EsportsContactForm">
+              <h2 className="ContactEsports-container-page">Contact</h2>
+                <form onSubmit={handleSubmit} className="Esports-form-container">
+                  <input id="name" type="text" name="name" placeholder="Your Name" required />
+                  <input id="email" type="email" name="email" placeholder="Your Email Address" required />
+                  <input id="phone" type="tel" name="phone" placeholder="Your Phone Number" />
+                  <input id="subject" type="text" name="subject" placeholder="Subject of your message" />
+                  <textarea id="message" name="message" placeholder="Your Message" required />
+                  <button type="submit" disabled={state.submitting} className="button-container-page">
+                    Submit
+                  </button>
+                  <ValidationError prefix="Email" field="email" errors={state.errors} />
+                  <ValidationError prefix="Message" field="message" errors={state.errors} />
+                </form>
+              </div>
+            </div>
+          </div>
         </main>
       </div>
     </div>
