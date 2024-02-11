@@ -75,7 +75,7 @@ margin-bottom: -45px;
 
 .navbar ul li a {
   text-decoration: none;
-  color: #ffe7e7;
+  color: #ffffff;
   transition: color 0.3s ease;
 }
 
@@ -92,7 +92,7 @@ margin-bottom: -45px;
 .container .navbar.open ul,
 .container .navbar.open {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.4); 
+  /* background-color: rgba(0, 0, 0, 0.4);  */
   min-width: 100px;
   margin-left: -10px;
 
@@ -117,7 +117,7 @@ overflow-x: hidden;
 
   .navbar ul li a {
     text-decoration: none;
-    color:white;
+    color:rgb(255, 245, 106);
     transition: color 0.3s ease;
   }
   .mobile-menu-icon {
