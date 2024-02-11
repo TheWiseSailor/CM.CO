@@ -47,22 +47,21 @@ function EsportsPage() {
             </div>
           </div>
           {/* CONTACT FORM */}
-          
+          <div className='ContactFormBanner'> Contact Me!</div>
           <div className="EsportsContactPage">
             
             <div className="EsportsContactSection">
-              <div className="ContactText" data-aos="fade-down" data-aos-duration="3000">
-       
-                <h2 className="ContactEsports-container-page">Contact</h2>
-                <p>Contact us for any inquiries:</p>
+              <div className="ContactText" >
               </div>
+            
+
               <div className="EsportsContactForm">
-              <h2 className="ContactEsports-container-page">Contact</h2>
                 <form onSubmit={handleSubmit} className="Esports-form-container">
-                  <input id="name" type="text" name="name" placeholder="Your Name" required />
-                  <input id="email" type="email" name="email" placeholder="Your Email Address" required />
-                  <input id="phone" type="tel" name="phone" placeholder="Your Phone Number" />
-                  <input id="subject" type="text" name="subject" placeholder="Subject of your message" />
+                <h2 className="ContactEsports-container-page">Contact</h2>
+                  <input id="name" type="text" name="name" placeholder="Your Name" required  className='textfield'/>
+                  <input id="email" type="email" name="email" placeholder="Your Email Address" required className='textfield'/>
+                  <input id="phone" type="tel" name="phone" placeholder="Your Phone Number" className='textfield'/>
+                  <input id="subject" type="text" name="subject" placeholder="Subject of your message" className='textfield'/>
                   <textarea id="message" name="message" placeholder="Your Message" required />
                   <button type="submit" disabled={state.submitting} className="button-container-page">
                     Submit
@@ -70,12 +69,14 @@ function EsportsPage() {
                   <ValidationError prefix="Email" field="email" errors={state.errors} />
                   <ValidationError prefix="Message" field="message" errors={state.errors} />
                 </form>
+                
               </div>
             </div>
           </div>
         </main>
       </div>
     </div>
+    
   );
 }
 

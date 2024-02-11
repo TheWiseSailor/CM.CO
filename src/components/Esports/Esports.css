@@ -83,7 +83,7 @@ font-size: 30px;
   margin-top:-10px;
 font-weight: bolder;
 font-size: 30px;
-  background-color: black;
+  background-color: rgb(0, 112, 115);
   color: rgb(255, 215, 0);
 }
 /* ABOUTESPORTS SECTION */
@@ -96,7 +96,7 @@ padding-bottom: 30px;
 margin-top:-10px;
 font-weight: bolder;
 font-size: 30px;
-background-color: black;
+background-color: rgb(0, 112, 115);
 color: rgb(255, 215, 0);
 }
 
@@ -124,57 +124,41 @@ padding-bottom: 70px;
 padding-top: 50px;
 }
 
+/* CONTACT SECTION */
 
-.EsportsContactPage {
-  text-align: center;
-  padding-bottom: 150px;
+.ContactFormBanner{
+min-width: 100vw;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top:-70px;
+  margin-bottom: 50px;
+font-weight: bolder;
+font-size: 30px;
+background-color: rgb(0, 112, 115);
+color: rgb(255, 215, 0);
 }
-
-.EsportsContactSection {
-  margin: 0 auto;
+.Esports-form-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  min-width: 500px;
-  height: 500px;
-}
-
-.ContactText {
-  color: rgb(255, 215, 0);
-}
-
-.EsportsContactForm {
-  margin: 0 auto;
-  color: rgb(255, 215, 0);
-  border-radius: 30px !important;
+  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.8);
-  min-height: 400px;
+
   min-width: 400px;
+  min-height: 500px;
+margin-bottom: 100px;
+border-radius: 30px;
 }
 
-.EsportsContactForm input,
-.EsportsContactForm textarea {
-  display: block;
-  width: 60%;
-  height: 30px;
-  margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-  .EsportsContactSection {
-    flex-direction: column;
-  }
-
-  .EsportsContactForm {
-    min-width: 300px;
-    min-height: 400px;
-    border-radius: 30px;
+@media only screen and (max-width: 600px) {
+  .Esports-form-container input,
+  .Esports-form-container textarea {
+    width: 80%;
   }
 }
+.ContactEsports-container-page{
+  color: rgb(255, 215, 0);
+  font-size: 30px;
 
-
-
+}
 @media only screen and (max-width: 768px) {
   .Esports-E1 {
     height: auto;
@@ -216,7 +200,13 @@ margin-top: -50px;
     font-weight: bold;
     max-width: 290px;
 }
+.Esports-form-container {
+  min-width: 350px;
+  min-height: 400px;
 }
+
+}
+
 @media (min-width: 1500px) {
   .AboutUs {
       margin-right: 50px;
@@ -239,4 +229,22 @@ margin-top: -50px;
   margin-bottom: 100px;
 
 }
+.Esports-form-container {
+
+  background-color: rgba(0, 0, 0, 0.8);
+  min-width: 800px;
+  
+}
+.Esports-form-container{
+  padding-top: 10px;
+  min-height: 550px;
+}
+.Esports-form-container input,
+.Esports-form-container textarea {
+
+padding: 15px;
+  width: 75%;
+
+}
+  
 }
