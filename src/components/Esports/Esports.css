@@ -123,6 +123,29 @@ color: rgb(255, 215, 0);
 padding-bottom: 70px;
 padding-top: 50px;
 }
+/* SOCIALS */
+.social-icons {
+
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+}
+
+.SocialContactContainer{background-color: rgba(0, 0, 0, 0.3); 
+  
+  border-radius: 30px;
+  margin-bottom: 100px;
+}
+
+.SocialP{
+  max-width: 700px;
+  color: rgb(255, 215, 0);
+font-weight: bolder;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 
 /* CONTACT SECTION */
 
@@ -188,6 +211,7 @@ margin-top: -50px;
 
   .Esports-text-overlay{
     font-size: 20px;
+
   }
   .AboutUs{
     font-size: 15px;
@@ -204,7 +228,19 @@ margin-top: -50px;
   min-width: 350px;
   min-height: 400px;
 }
+.social-icons {
 
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 30px;
+}
+.SocialP{
+  max-width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
 }
 
 @media (min-width: 1500px) {

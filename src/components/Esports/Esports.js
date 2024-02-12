@@ -1,10 +1,14 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-
 import './Esports.css';
 import EBImage from '../Esports/EsportsImages/EB.png';
-import ES1Image from '../Esports/EsportsImages/ES1.png'; 
-import ProfileImage from '../Esports/EsportsImages/ES2.png'; 
+import ES1Image from '../Esports/EsportsImages/ES1.png';
+import ProfileImage from '../Esports/EsportsImages/ES2.png';
+import AOSInitializer from "../AOS/AOSInitializer";
+import facebookIcon from './EsportsImages/SocialImages/facebook.png';
+import mailIcon from './EsportsImages/SocialImages/mail.png';
+import phoneIcon from './EsportsImages/SocialImages/phone.png';
+import instagramIcon from './EsportsImages/SocialImages/instagram.png';
 
 function EsportsPage() {
   const [state, handleSubmit] = useForm("bklsesef");
@@ -22,7 +26,8 @@ function EsportsPage() {
       <div className="esports-page">
         <main className="esports-main">
           <div className="Esports-image-container">
-            <img src={EBImage} alt="Esports Banner" className='Esports-E1' />
+            <img src={EBImage} alt="Esports Banner" className='Esports-E1' data-aos="fade-down" data-aos-duration="3000" />
+            <AOSInitializer/>
             <div className="Esports-text-overlay">
               UNCW Esports
             </div>
@@ -48,17 +53,25 @@ function EsportsPage() {
           </div>
           {/* CONTACT FORM */}
           <div className='ContactFormBanner'> Contact Me!</div>
-          <div className="EsportsContactPage">
-            
-            <div className="EsportsContactSection">
-              <div className="ContactText" >
+          <div className="social-container">
+            <div className="SocialContactContainer">
+              <div className='SocialP'> <p className='Socialp2'>If you would like to get in contact with me for any of the following Esports programs, whether it be through this simple Contact form, or just by the social links below. I look forward to speaking to you!
+              </p>
+              <div className="social-icons">
+                <a href="#"><img src={instagramIcon} alt="Instagram" /></a>
+                <a href="mailto:youremail@example.com"><img src={mailIcon} alt="Email" /></a>
+                <a href="tel:+123456789"><img src={phoneIcon} alt="Phone" /></a>
               </div>
-            
-
+              </div>
+            </div>
+          </div>
+          <div className="EsportsContactPage">
+            <div className="EsportsContactSection">
+              <div className="ContactText" ></div>
               <div className="EsportsContactForm">
                 <form onSubmit={handleSubmit} className="Esports-form-container">
-                <h2 className="ContactEsports-container-page">Contact</h2>
-                  <input id="name" type="text" name="name" placeholder="Your Name" required  className='textfield'/>
+                  <h2 className="ContactEsports-container-page">Contact</h2>
+                  <input id="name" type="text" name="name" placeholder="Your Name" required className='textfield'/>
                   <input id="email" type="email" name="email" placeholder="Your Email Address" required className='textfield'/>
                   <input id="phone" type="tel" name="phone" placeholder="Your Phone Number" className='textfield'/>
                   <input id="subject" type="text" name="subject" placeholder="Subject of your message" className='textfield'/>
@@ -69,14 +82,13 @@ function EsportsPage() {
                   <ValidationError prefix="Email" field="email" errors={state.errors} />
                   <ValidationError prefix="Message" field="message" errors={state.errors} />
                 </form>
-                
               </div>
             </div>
           </div>
+
         </main>
       </div>
     </div>
-    
   );
 }
 
