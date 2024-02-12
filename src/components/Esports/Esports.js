@@ -12,7 +12,9 @@ import instagramIcon from './EsportsImages/SocialImages/instagram.png';
 
 function EsportsPage() {
   const [state, handleSubmit] = useForm("bklsesef");
-
+  const handleCall = () => {
+    window.location.href = 'tel:+118284343699'; 
+};
   if (state.succeeded) {
     return (
       <div className='SuccessMessageBackground'>
@@ -58,9 +60,9 @@ function EsportsPage() {
               <div className='SocialP'> <p className='Socialp2'>If you would like to get in contact with me for any of the following Esports programs, whether it be through this simple Contact form, or just by the social links below. I look forward to speaking to you!
               </p>
               <div className="social-icons">
-                <a href="#"><img src={instagramIcon} alt="Instagram" /></a>
-                <a href="mailto:youremail@example.com"><img src={mailIcon} alt="Email" /></a>
-                <a href="tel:+123456789"><img src={phoneIcon} alt="Phone" /></a>
+                <a href="https://www.instagram.com/cmoore_realestate/?igsh=MWdia3JmZ3VvNmFtbA%3D%3D"><img src={instagramIcon} alt="Instagram" /></a>
+                <a href="mailto:cmooregaming9@gmail.com"><img src={mailIcon} alt="Email" /></a>
+                <a href="tel:+18284343699" onClick={handleCall}><img src={phoneIcon} alt="Phone" /></a>
               </div>
               </div>
             </div>
