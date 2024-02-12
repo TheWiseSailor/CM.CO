@@ -36,30 +36,43 @@ function EsportsPage() {
           </div>
 
           <div className="AboutMe-content">
-            <div className='AboutMeBanner'> About Me</div>
+          <AOSInitializer/>
+            <div className='AboutMeBanner' data-aos="fade-down" data-aos-duration="3000"> About Me</div>
             <div className="content-wrapper">
-              <img src={ProfileImage} alt="Profile" className='ES2' />
-              <p className='AboutMe'>
+            <AOSInitializer/>
+              <img src={ProfileImage} alt="Profile" className='ES2' data-aos="fade-up" data-aos-duration="3000" />
+              <AOSInitializer/>
+              <p className='AboutMe'  data-aos="fade-down" data-aos-duration="3000">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget quam vestibulum, congue odio vel, hendrerit nisi. Cras et sodales eros. Phasellus vel mi eros. Donec sed ipsum augue. Mauris vitae lacus nec est faucibus blandit sed vel dui. Nulla facilisi. Mauris bibendum sagittis nisi id egestas. Curabitur in aliquet mauris.              
               </p>
             </div>
           </div>
           <div className="Esports-content">
-            <div className='AboutEsports'> About UNCW Esports</div>
+          <AOSInitializer/>
+            <div className='AboutEsports'data-aos="fade-down" data-aos-duration="3000"> About UNCW Esports</div>
             <div className="content-wrapper">
-              <p className='AboutUs'>
+            <AOSInitializer/>
+              <p className='AboutUs'data-aos="fade-up" data-aos-duration="3000">
                 At UNCW Esports, we're a dynamic community that embraces creativity and technology, extending beyond traditional filmmaking to competitive gaming. With teams in Smash, Halo, Call of Duty, Apex Legends, Valorant, League of Legends, and Rocket League, students immerse themselves in esports, honing skills and building friendships. Our members embody innovation and collaboration, shaping the future of cinema and gaming. Welcome to UNCW Esports, where creativity knows no bounds.              
               </p>
-              <img src={ES1Image} alt="ES1" className='ES1-image' />
+              <AOSInitializer/>
+              <img src={ES1Image} alt="ES1" className='ES1-image' data-aos="fade-down" data-aos-duration="3000"/>
             </div>
           </div>
           {/* CONTACT FORM */}
-          <div className='ContactFormBanner'> Contact Me!</div>
+          <AOSInitializer/>
+          <div className='ContactFormBanner'data-aos="fade-down" data-aos-duration="3000"> Contact Me!</div>
           <div className="social-container">
-            <div className="SocialContactContainer">
-              <div className='SocialP'> <p className='Socialp2'>If you would like to get in contact with me for any of the following Esports programs, whether it be through this simple Contact form, or just by the social links below. I look forward to speaking to you!
+          <AOSInitializer/>
+
+            <div className="SocialContactContainer"data-aos="fade-down" data-aos-duration="3000">
+            <AOSInitializer/>
+
+              <div className='SocialP'> <p className='Socialp2'data-aos="fade-down" data-aos-duration="3000">If you would like to get in contact with me for any of the following Esports programs, whether it be through this simple Contact form, or just by the social links below. I look forward to speaking to you!
               </p>
-              <div className="social-icons">
+              <AOSInitializer/>
+
+              <div className="social-icons"data-aos="fade-up" data-aos-duration="3000">
                 <a href="https://www.instagram.com/cmoore_realestate/?igsh=MWdia3JmZ3VvNmFtbA%3D%3D"><img src={DiscordIcon} alt="Discord" /></a>
                 <a href="mailto:cmooregaming9@gmail.com"><img src={mailIcon} alt="Email" /></a>
                 <a href="tel:+18284343699" onClick={handleCall}><img src={phoneIcon} alt="Phone" /></a>
@@ -68,7 +81,9 @@ function EsportsPage() {
             </div>
           </div>
           <div className="EsportsContactPage">
-            <div className="EsportsContactSection">
+          <AOSInitializer/>
+
+            <div className="EsportsContactSection"data-aos="fade-up" data-aos-duration="3000">
               <div className="ContactText" ></div>
               <div className="EsportsContactForm">
                 <form onSubmit={handleSubmit} className="Esports-form-container">
