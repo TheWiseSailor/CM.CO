@@ -5,10 +5,10 @@ import EBImage from '../Esports/EsportsImages/EB.png';
 import ES1Image from '../Esports/EsportsImages/ES1.png';
 import ProfileImage from '../Esports/EsportsImages/ES2.png';
 import AOSInitializer from "../AOS/AOSInitializer";
-import facebookIcon from './EsportsImages/SocialImages/facebook.png';
+
 import mailIcon from './EsportsImages/SocialImages/mail.png';
 import phoneIcon from './EsportsImages/SocialImages/phone.png';
-import instagramIcon from './EsportsImages/SocialImages/instagram.png';
+import DiscordIcon from './EsportsImages/SocialImages/Discord.png';
 
 function EsportsPage() {
   const [state, handleSubmit] = useForm("bklsesef");
@@ -60,7 +60,7 @@ function EsportsPage() {
               <div className='SocialP'> <p className='Socialp2'>If you would like to get in contact with me for any of the following Esports programs, whether it be through this simple Contact form, or just by the social links below. I look forward to speaking to you!
               </p>
               <div className="social-icons">
-                <a href="https://www.instagram.com/cmoore_realestate/?igsh=MWdia3JmZ3VvNmFtbA%3D%3D"><img src={instagramIcon} alt="Instagram" /></a>
+                <a href="https://www.instagram.com/cmoore_realestate/?igsh=MWdia3JmZ3VvNmFtbA%3D%3D"><img src={DiscordIcon} alt="Discord" /></a>
                 <a href="mailto:cmooregaming9@gmail.com"><img src={mailIcon} alt="Email" /></a>
                 <a href="tel:+18284343699" onClick={handleCall}><img src={phoneIcon} alt="Phone" /></a>
               </div>
