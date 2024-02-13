@@ -108,8 +108,28 @@ CONTACT SECTION */
   }
   
 }
+/* success */
+.SuccessMessageBackground{
+  background-color: #93b7c4 ;
+  color: black;
+  min-height: 48vh !important;
+  padding-top: 400px;
+  margin: 0 auto;
+}
+.SuccessMessage{
+  background-color: rgb(18, 230, 18);
+  color: black;
+  margin: 0 auto;
+padding-top: 20px;
 
-
+  text-align: center;
+  min-height: 170px;
+  max-width: 230px;
+border-radius: 30px;
+font-weight: bold;
+font-size: 30px;
+margin-top: -150px;
+}
 /* Media queries for mobile view */
 
 @media only screen and (max-width: 768px) {
