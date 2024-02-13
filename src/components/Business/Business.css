@@ -122,5 +122,8 @@ min-height: 70vh;
   .BH2{
     margin-bottom: -5px;
   }
+  .Business2Image{
+    border-radius: 0%;
+  }
 
 }
