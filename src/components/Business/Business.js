@@ -1,15 +1,18 @@
 
 import React from 'react';
 import './Business.css';
+import Business1Image from '../Business/BusinessImages/Business1.png';
 
 function App() {
   return (
     <div className="App">
       <header className="header">
-        <img src="https://via.placeholder.com/400" alt="Greeting" className="greeting-image" />
+        
+        <img src={Business1Image} alt="Greeting" className="greeting-image" />
+        
         <div className="header-content">
-          <h1>Welcome to Dream Homes</h1>
-          <p>Your destination for finding your dream home!</p>
+          <h1>Cmoore Realestate</h1>
+          <p className='BusinessP1'>Realestate Made Simple</p>
         </div>
       </header>
 
