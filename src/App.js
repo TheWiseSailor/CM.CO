@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer";
 import RenderPages from "./components/RenderPages"; 
 import ContactFormPage from "./components/Contact/Contact"; 
 import EsportsPage from "./components/Esports/Esports"; 
-
+import Business from "./components/Business/Business";
 import './app.css'
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
           <Route path="/JE.CO" element={<RenderPages />} /> 
           <Route path="/contact" element={<ContactFormPage />} /> 
           <Route path="/Esports" element={<EsportsPage />} /> 
+          <Route path="/Business" element={<Business />} /> 
 
         </Routes>
         <Footer />

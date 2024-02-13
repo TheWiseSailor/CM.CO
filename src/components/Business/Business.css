@@ -1,0 +1,43 @@
+
+.greeting-image {
+  width: 100vw;
+  max-height: 100vh;
+}
+
+.header-content {
+  margin-top: 20px;
+}
+
+.about-section,
+.contact-section {
+  padding: 20px;
+}
+
+.about-section h2,
+.contact-section h2 {
+  text-align: center;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section input,
+.contact-section textarea,
+.contact-section button {
+  margin-bottom: 10px;
+}
+
+
+
+/* Media queries for mobile view */
+
+@media only screen and (max-width: 600px) {
+  .header-content h1 {
+    font-size: 24px;
+  }
+  .header-content p {
+    font-size: 14px;
+  }
+}
