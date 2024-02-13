@@ -1,10 +1,18 @@
 
 import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import './Business.css';
 import Business1Image from '../Business/BusinessImages/Business1.png';
 import Business2Image from '../Business/BusinessImages/Business2.png';
 
 function App() {
+  const [state, handleSubmit] = useForm("bklsesef");
+
+
+  if (state.succeeded) {
+    return <div className='SuccessMessageBackground'><p className=' SuccessMessage'>Success!<br/> I will be in touch!</p></div>;
+  }
+
   return (
     <div className="App">
       <header className="header">
@@ -30,16 +38,65 @@ function App() {
       </div>
     </section>
 
-      <section className="contact-section">
-        <h2>Contact Us</h2>
-        <form>
-          <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Your Email" />
-          <textarea placeholder="Your Message"></textarea>
-          <button type="submit" className="btn">Send Message</button>
-        </form>
-      </section>
+    <div className="contact-container-form-page">
+      <div className="contact-form-container-page" data-aos="fade-down"
+              data-aos-duration="3000">
+        <h2 className="ContactHomePageHeader-container-page">Contact</h2>
+        <form onSubmit={handleSubmit} className="form-container">
+   
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
 
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Your Email Address"
+            required
+          />
+       
+          <input
+            id="phone"
+            type="tel"
+            name="phone"
+            placeholder="Your Phone Number"
+          />
+      
+          <input
+            id="subject"
+            type="text"
+            name="subject"
+            placeholder="Subject of your message"
+          />
+     
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            required
+          />
+          <button type="submit" disabled={state.submitting} className="button-container-page">
+            Submit
+          </button>
+     
+          <ValidationError
+            prefix="Email"
+            field="email"
+            errors={state.errors}
+          />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
+        </form>
+      </div>
+    </div>
 
     </div>
   );

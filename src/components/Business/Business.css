@@ -28,6 +28,9 @@
 
 
 /* about */
+.about-me-container{
+  margin-bottom: 100px !important;
+}
 .BH2{
 margin: 0 auto;
 text-align: center;
@@ -46,6 +49,7 @@ margin-bottom: 50px;
 .about-section,
 .contact-section {
   padding: 20px;
+
 }
 
 .about-section h2,
