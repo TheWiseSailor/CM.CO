@@ -28,7 +28,7 @@ const Header = () => {
           <nav className={`navbar ${isMobileMenuOpen ? 'open' : ''}`}>
             <ul className={isEsportsPage ? 'esports-page' : ''}>
             <li><Link to="/Business"> Business </Link></li>
-            <li><Link to="/Contact"> Contact</Link></li>
+            {/* <li><Link to="/Contact"> Contact</Link></li> */}
               <li><Link to="/Esports">Esports</Link></li> 
             
             </ul>

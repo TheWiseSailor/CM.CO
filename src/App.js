@@ -9,6 +9,7 @@ import EsportsPage from "./components/Esports/Esports";
 import Business from "./components/Business/Business";
 import './app.css'
 function App() {
+  const formKey = process.env.REACT_APP_FORMSPREE_KEY;
   return (
     <div className="app-container">
       <Router>
@@ -17,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<RenderPages />} /> 
           <Route path="/JE.CO" element={<RenderPages />} /> 
-          <Route path="/contact" element={<ContactFormPage />} /> 
+          {/* <Route path="/contact" element={<ContactFormPage />} />  */}
           <Route path="/Esports" element={<EsportsPage />} /> 
           <Route path="/Business" element={<Business />} /> 
 
