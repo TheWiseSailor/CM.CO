@@ -1,7 +1,7 @@
 
 .greeting-image {
   width: 100%;
-  height: 100vh;
+  height: 101vh;
   margin-top:-77px;
 }
 
@@ -26,7 +26,22 @@
 }
 
 
+/* about */
+.BH2{
+margin: 0 auto;
+text-align: center;
+margin-top: -5px;
+padding-top: 10px;
+padding-bottom: 10px;
 
+font-size: 40px;
+color: rgb(255, 255, 255);
+background-color:  rgb(0, 0, 0, 0.5);
+
+
+
+margin-bottom: 50px;
+}
 .about-section,
 .contact-section {
   padding: 20px;
@@ -36,6 +51,26 @@
 .contact-section h2 {
   text-align: center;
 }
+
+
+.about-me-container {
+  display: flex;
+  flex-direction: column; 
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.Business2Image {
+max-width: 500px;
+max-height: 500px;
+}
+
+.text-content {
+  padding: 0 20px; 
+}
+/* 
+CONTACT SECTION */
+
 
 .contact-section form {
   display: flex;
@@ -48,6 +83,25 @@
   margin-bottom: 10px;
 }
 
+@media (min-width: 768px) {
+  .about-me-container {
+    flex-direction: row; 
+  }
+
+  .Business2Image {
+    flex: 1; 
+  }
+
+  .text-content {
+    flex: 1; 
+  }
+  .text-content{
+    padding-top: 70px;
+    margin-left: 20px;
+    font-size: 30px;
+  }
+  
+}
 
 
 /* Media queries for mobile view */
@@ -63,5 +117,8 @@
 min-height: 70vh;
     margin-top:-90px;
   }
-  
+  .BH2{
+    margin-bottom: -5px;
+  }
+
 }
