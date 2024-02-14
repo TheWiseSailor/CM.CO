@@ -1,13 +1,13 @@
+// RenderPages.js
 import React from 'react';
-import { Routes, Route } from 'react-router-dom'; 
 
+import HomePage from './HomePage/HomePage'; 
 
 function RenderPages({ contact }) {
   return (
     <div>
+      <HomePage />
 
-      <Routes>
-      </Routes>
     </div>
   );
 }

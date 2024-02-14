@@ -17,8 +17,8 @@ function Business() {
       <header className="header">
         <img src={Business1Image} alt="Greeting" className="greeting-image" />
         <div className="header-content">
-          <h1>Cmoore Realestate</h1>
-          <p className='BusinessP1'>Realestate Made Simple</p>
+          <h1>Cmoore Real Estate</h1>
+          <p className='BusinessP1'>Real Estate Made Simple</p>
         </div>
       </header>
 
@@ -36,7 +36,7 @@ function Business() {
       <div className="contact-container-form-page">
         
         <div className="left-side-content">
-          <p>If you would like to fill out any inqueries about realestate or housing oppertunities, don't hesitate to reach out!</p>
+          <p>If you would like to fill out any inqueries about real estate or housing oppertunities, don't hesitate to reach out!</p>
         </div>
         <div className="contact-form-container-page" data-aos="fade-down" data-aos-duration="3000">
           <h2 className="ContactHomePageHeader-container-page">Contact</h2>
