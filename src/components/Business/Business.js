@@ -15,9 +15,7 @@ function Business() {
   return (
     <div className="App">
       <header className="header">
-        
         <img src={Business1Image} alt="Greeting" className="greeting-image" />
-        
         <div className="header-content">
           <h1>Cmoore Realestate</h1>
           <p className='BusinessP1'>Realestate Made Simple</p>
@@ -30,11 +28,16 @@ function Business() {
         <img src={Business2Image} alt="carter" className="Business2Image" />
         <div className="text-content">
           <p>
-          Hello, I'm Carter, your trusted real estate agent specializing in finding dream homes near the Wilmington area. Whether you're searching for a cozy bungalow, a spacious family home, or a luxurious estate, I'm here to guide you every step of the way. Let's turn your homeownership dreams into reality!          </p>
+            Hello, I'm Carter, your trusted real estate agent specializing in finding dream homes near the Wilmington area. Whether you're searching for a cozy bungalow, a spacious family home, or a luxurious estate, I'm here to guide you every step of the way. Let's turn your homeownership dreams into reality!
+          </p>
         </div>
       </section>
-
+      <h2 className='BH3'>About Me</h2>
       <div className="contact-container-form-page">
+        
+        <div className="left-side-content">
+          <p>If you would like to fill out any inqueries about realestate or housing oppertunities, don't hesitate to reach out!</p>
+        </div>
         <div className="contact-form-container-page" data-aos="fade-down" data-aos-duration="3000">
           <h2 className="ContactHomePageHeader-container-page">Contact</h2>
           <form onSubmit={handleSubmit} className="form-container">
@@ -51,7 +54,6 @@ function Business() {
           </form>
         </div>
       </div>
-
     </div>
   );
 }
