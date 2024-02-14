@@ -32,7 +32,7 @@ function Business() {
           </p>
         </div>
       </section>
-      <h2 className='BH3'>About Me</h2>
+      <h2 className='BH3'>Contacts</h2>
       <div className="contact-container-form-page">
         
         <div className="left-side-content">
