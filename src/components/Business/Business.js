@@ -30,8 +30,7 @@ function Business() {
         <img src={Business2Image} alt="carter" className="Business2Image" />
         <div className="text-content">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod tellus eget lectus vehicula, ut faucibus orci blandit. Quisque nec urna eu risus laoreet bibendum eget non purus. Sed rhoncus, lacus quis imperdiet tristique, velit elit consectetur nisi, sit amet placerat justo metus a lorem. Donec in lobortis tortor. Integer efficitur suscipit quam sit amet volutpat.
-          </p>
+          Hello, I'm Carter, your trusted real estate agent specializing in finding dream homes near the Wilmington area. Whether you're searching for a cozy bungalow, a spacious family home, or a luxurious estate, I'm here to guide you every step of the way. Let's turn your homeownership dreams into reality!          </p>
         </div>
       </section>
 

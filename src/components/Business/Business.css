@@ -149,6 +149,10 @@ min-height: 70vh;
   .Business2Image{
     border-radius: 0%;
   }
+.text-content{
+  margin-top: 100px;
+  margin-bottom: -150px;
+}
 
 }
 

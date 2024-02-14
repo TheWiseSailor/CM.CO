@@ -44,8 +44,7 @@ function EsportsPage() {
               <img src={ProfileImage} alt="Profile" className='ES2' data-aos="fade-up" data-aos-duration="3000" />
               <AOSInitializer/>
               <p className='AboutMe'  data-aos="fade-down" data-aos-duration="3000">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget quam vestibulum, congue odio vel, hendrerit nisi. Cras et sodales eros. Phasellus vel mi eros. Donec sed ipsum augue. Mauris vitae lacus nec est faucibus blandit sed vel dui. Nulla facilisi. Mauris bibendum sagittis nisi id egestas. Curabitur in aliquet mauris.              
-              </p>
+              I'm Carter, the captain of the UNC Wilmington Cod team. As a leader among my peers, I thrive on guiding others to success both on and off the waters. Just like navigating the seas, I'm here to steer you towards your goals, whether it's finding the perfect fishing spot or achieving academic excellence. Let's set sail together and chart a course to victory!              </p>
             </div>
           </div>
           <div className="Esports-content">
