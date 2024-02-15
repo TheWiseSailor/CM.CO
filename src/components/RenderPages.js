@@ -3,7 +3,7 @@ import React from 'react';
 
 import HomePage from './HomePage/HomePage'; 
 
-function RenderPages({ contact }) {
+function RenderPages({  }) {
   return (
     <div>
       <HomePage />
