@@ -4,10 +4,10 @@ const HomePage = () => {
   const [text, setText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(100 - Math.random() * 100);
 
-  const toRotate = ['Real Estate Agent', 'Cod Captain', ];
-  const period = 2000;
+  const toRotate = [',Real Estate Agent', 'Cod Captain', ];
+  const period = 1000;
 
   useEffect(() => {
     let ticker = setInterval(() => tick(), delta);

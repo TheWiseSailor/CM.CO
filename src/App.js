@@ -16,8 +16,8 @@ function App() {
         <Header />
   
         <Routes>
-          <Route path="/" element={<RenderPages />} /> 
-          <Route path="/JE.CO" element={<RenderPages />} /> 
+        <Route path="/" element={<RenderPages />} /> 
+
           <Route path="/Esports" element={<EsportsPage />} /> 
           <Route path="/Business" element={<Business />} /> 
 
