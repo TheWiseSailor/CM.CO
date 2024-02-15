@@ -9,7 +9,7 @@ const HomePage = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [delta, setDelta] = useState(100 - Math.random() * 100);
 
-  const toRotate = [',Real Estate Agent', 'Cod Captain', ];
+  const toRotate = ['Real Estate Agent', 'Cod Captain', ];
   const period = 1000;
 
   useEffect(() => {
@@ -49,7 +49,7 @@ const HomePage = () => {
       <div className="content">
         <div className="animate__animated animate__fadeIn">
           <h1 className='Intro1'>
-            Hello! I'm Carter Moore <span className="wrap">{text}</span>
+            Hello! I'm Carter Moore,  <span className="wrap">{text}</span>
           </h1>
           <p className='Intro2'>Great outcomes demand time and patience.</p>
           <Link to="/Business">
