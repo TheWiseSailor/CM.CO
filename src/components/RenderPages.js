@@ -1,9 +1,9 @@
 // RenderPages.js
 import React from 'react';
 
-import HomePage from './HomePage/HomePage'; 
+import HomePage from '../components/HomePage/HomePage'; 
 
-function RenderPages({  }) {
+function RenderPages() {
   return (
     <div>
       <HomePage />
