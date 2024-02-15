@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,  } from 'react';
+import { Link } from 'react-router-dom';
 import SampleImage from '../HomePage/HomePageImages/Business2.png';
 import "./HomePage.css"
 
@@ -39,6 +40,10 @@ const HomePage = () => {
     }
   };
 
+    const handleConnectClick = () => {
+      console.log('connect');
+ 
+    };
   return (
     <section className="about" id="home">
       <div className="content">
@@ -47,9 +52,11 @@ const HomePage = () => {
             Hello! I'm Carter Moore <span className="wrap">{text}</span>
           </h1>
           <p className='Intro2'>Great outcomes demand time and patience.</p>
-          <button onClick={() => console.log('connect')}className='ConnectBTN'>
-            Connect!
-          </button>
+          <Link to="/Business">
+      <button onClick={handleConnectClick} className='ConnectBTN'>
+        Connect!
+      </button>
+    </Link>
         </div>
       </div>
       <div className="animate__animated animate__zoomIn">
