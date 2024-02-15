@@ -8,7 +8,7 @@ import AOSInitializer from "../AOS/AOSInitializer";
 
 import mailIcon from './EsportsImages/SocialImages/mail.png';
 import phoneIcon from './EsportsImages/SocialImages/phone.png';
-import DiscordIcon from './EsportsImages/SocialImages/Discord.png';
+
 
 function EsportsPage() {
   const formKey = process.env.REACT_APP_FORMSPREE_API_KEY; // Updated API key
@@ -73,7 +73,6 @@ function EsportsPage() {
               <AOSInitializer/>
 
               <div className="social-icons"data-aos="fade-up" data-aos-duration="3000">
-                <a href="https://www.instagram.com/cmoore_realestate/?igsh=MWdia3JmZ3VvNmFtbA%3D%3D"><img src={DiscordIcon} alt="Discord" /></a>
                 <a href="mailto:cmooregaming9@gmail.com"><img src={mailIcon} alt="Email" /></a>
                 <a href="tel:+18284343699" onClick={handleCall}><img src={phoneIcon} alt="Phone" /></a>
               </div>
