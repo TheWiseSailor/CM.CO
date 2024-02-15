@@ -1,0 +1,59 @@
+/* HomePage */
+/* HEADER */
+.headerImg1{
+  min-width: 70%;
+  max-height: 500px;
+border-radius: 90px;
+}
+
+/* ABOUT */
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  text-align: center;
+  max-width: 1500px;
+  margin:0 auto;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.about > div {
+  flex: 1; 
+  margin: 0 10px; 
+}
+/* INTRO SECTON */
+
+
+/* Media Query for mobile view */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column; 
+    padding-top: 0px;
+
+  }
+  .headerImg1{
+    max-width: 300px;
+    max-height: 300px ;
+    margin-top: 40px;
+  border-radius: 60px;
+  }
+}
+@media (min-width: 769px) {
+.Intro1{
+  font-size: 40px;
+  margin-left: 50px;
+}
+.Intro2{
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 50px;
+}
+.ConnectBTN{
+  margin-left: 50px;
+
+}
+
+
+}

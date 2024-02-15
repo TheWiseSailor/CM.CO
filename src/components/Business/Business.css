@@ -189,7 +189,15 @@ min-height: 70vh;
   max-width: 80vw;
   margin-bottom: 150px;
 }
+.ContactInf1{
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-top: -50px;
 }
+.ContactInf2
+{margin-top: 190px !important;}}
 
 
 /* STRICTLY CONTACT */

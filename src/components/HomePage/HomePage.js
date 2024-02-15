@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import SampleImage from '../HomePage/HomePageImages/Business2.png';
+import "./HomePage.css"
 
 const HomePage = () => {
   const [text, setText] = useState('');
@@ -12,7 +14,7 @@ const HomePage = () => {
   useEffect(() => {
     let ticker = setInterval(() => tick(), delta);
     return () => clearInterval(ticker);
-  }, [text]);
+  }, [text, delta]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -39,21 +41,22 @@ const HomePage = () => {
 
   return (
     <section className="about" id="home">
-      <div className="animate__animated animate__fadeIn">
-        <span className="tagline">CM.CO</span>
-        <h1>
-          Hello! I'm Carter Moore <span className="wrap">{text}</span>
-        </h1>
-        <p>Great outcomes demand time and patience.</p>
-        <button onClick={() => console.log('connect')}>
-          Connect!
-        </button>
+      <div className="content">
+        <div className="animate__animated animate__fadeIn">
+          <h1 className='Intro1'>
+            Hello! I'm Carter Moore <span className="wrap">{text}</span>
+          </h1>
+          <p className='Intro2'>Great outcomes demand time and patience.</p>
+          <button onClick={() => console.log('connect')}className='ConnectBTN'>
+            Connect!
+          </button>
+        </div>
       </div>
       <div className="animate__animated animate__zoomIn">
         <img
-          className="headerImg"
-          src="../HomePage/HomePageImages/Sample.jpg"
-          alt="headerImg"
+          className="headerImg1"
+          src={SampleImage}
+          alt="HomePageImg1"
         />
       </div>
     </section>

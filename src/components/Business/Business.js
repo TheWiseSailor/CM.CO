@@ -27,7 +27,7 @@ function Business() {
       <section className="about-me-container">
         <img src={Business2Image} alt="carter" className="Business2Image" />
         <div className="text-content">
-          <p>
+          <p className='ContactInf1'>
             Hello, I'm Carter, your trusted real estate agent specializing in finding dream homes near the Wilmington area. Whether you're searching for a cozy bungalow, a spacious family home, or a luxurious estate, I'm here to guide you every step of the way. Let's turn your homeownership dreams into reality!
           </p>
         </div>
@@ -36,7 +36,7 @@ function Business() {
       <div className="contact-container-form-page">
         
         <div className="left-side-content">
-          <p>If you would like to fill out any inqueries about real estate or housing oppertunities, don't hesitate to reach out!</p>
+          <p className='ContactInf2'>If you would like to fill out any inqueries about real estate or housing oppertunities, don't hesitate to reach out!</p>
         </div>
         <div className="contact-form-container-page" data-aos="fade-down" data-aos-duration="3000">
           <h2 className="ContactHomePageHeader-container-page">Contact</h2>
