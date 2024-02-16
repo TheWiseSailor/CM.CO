@@ -1,36 +1,22 @@
-import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-
 import RenderPages from "./components/RenderPages";
 import EsportsPage from "./components/Esports/Esports"; 
 import Business from "./components/Business/Business";
 import './app.css'
 
 function App() {
-  const formKey = process.env.REACT_APP_FORMSPREE_KEY;
-
-  function usePageRefresh() {
-    const location = useLocation();
-
-    useEffect(() => {
-      window.location.reload();
-    }, [location]);
-  }
-
   return (
     <div className="app-container">
-      <Router>
+      <Router basename="/">
         <Header />
-  
         <Routes>
-          <Route path="/" element={<RenderPages />} /> 
-          <Route path="/CM.CO" element={<RenderPages />} />
+          <Route path="/" element={<RenderPages />} />
           <Route path="/Esports" element={<EsportsPage />} /> 
           <Route path="/Business" element={<Business />} /> 
         </Routes>
-        
         <Footer />
       </Router>
     </div>
