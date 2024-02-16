@@ -3,6 +3,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import './Business.css';
 import Business1Image from '../Business/BusinessImages/Business1.png';
 import Business2Image from '../Business/BusinessImages/Business2.png';
+import AOSInitializer from "../AOS/AOSInitializer";
 
 function Business() {
   const formKey = process.env.REACT_APP_FORMSPREE_API_KEY; 
@@ -17,16 +18,20 @@ function Business() {
       <header className="header">
         <img src={Business1Image} alt="Greeting" className="greeting-image" />
         <div className="header-content">
-          <h1>Cmoore Real Estate</h1>
-          <p className='BusinessP1'>Real Estate Made Simple</p>
+
+        <AOSInitializer/>
+          <h1 data-aos="fade-down" data-aos-duration="3000" >Cmoore Real Estate</h1>
+          <p className='BusinessP1' data-aos="fade-up" data-aos-duration="3000">Real Estate Made Simple</p>
         </div>
       </header>
 
+   
       <h2 className='BH2'>About Me</h2>
-
-      <section className="about-me-container">
+      <AOSInitializer/>
+      <section className="about-me-container"data-aos="fade-down" data-aos-duration="3000" >
         <img src={Business2Image} alt="carter" className="Business2Image" />
-        <div className="text-content">
+        <AOSInitializer/>
+        <div className="text-content"data-aos="fade-up" data-aos-duration="3000" >
           <p className='ContactInf1'>
             Hello, I'm Carter, your trusted real estate agent specializing in finding dream homes near the Wilmington area. Whether you're searching for a cozy bungalow, a spacious family home, or a luxurious estate, I'm here to guide you every step of the way. Let's turn your homeownership dreams into reality!
           </p>
@@ -34,8 +39,8 @@ function Business() {
       </section>
       <h2 className='BH3'>Contacts</h2>
       <div className="contact-container-form-page">
-        
-        <div className="left-side-content">
+      <AOSInitializer/>
+        <div className="left-side-content"data-aos="fade-up" data-aos-duration="3000">
           <p className='ContactInf2'>If you would like to fill out any inqueries about real estate or housing oppertunities, don't hesitate to reach out!</p>
         </div>
         <div className="contact-form-container-page" data-aos="fade-down" data-aos-duration="3000">
