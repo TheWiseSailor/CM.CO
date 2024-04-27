@@ -38,7 +38,7 @@ function Business() {
         </div>
       </section>
 
-
+{/* add more to this later */}
       {/* add a section here to where I can add a 3d house */}
       <h2 className='BH3'>Contacts</h2>
       <div className="contact-container-form-page">
