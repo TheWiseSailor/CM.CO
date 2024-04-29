@@ -290,6 +290,39 @@ textarea {
   margin: 0 auto !important; 
   margin-top: 15px !important;
 }
+
+.DisplayLinksSection {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 170px;
+}
+
+.DisplayLinksSection h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.DisplayLinksSection ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.DisplayLinksSection ul li {
+  margin-bottom: 10px;
+}
+
+.DisplayLinksSection ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.DisplayLinksSection ul li a:hover {
+  color: #ffc107;
+}
 @media screen and (max-width: 600px) {
   input,
   textarea {

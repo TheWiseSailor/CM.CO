@@ -5,6 +5,7 @@ import EBImage from '../Esports/EsportsImages/EB.png';
 import ES1Image from '../Esports/EsportsImages/ES1.png';
 import ProfileImage from '../Esports/EsportsImages/ES2.png';
 import AOSInitializer from "../AOS/AOSInitializer";
+import TwitchIcon from './EsportsImages/SocialImages/twitch.png';
 
 import mailIcon from './EsportsImages/SocialImages/mail.png';
 import phoneIcon from './EsportsImages/SocialImages/phone.png';
@@ -59,6 +60,16 @@ function EsportsPage() {
               <img src={ES1Image} alt="ES1" className='ES1-image' data-aos="fade-down" data-aos-duration="3000"/>
             </div>
           </div>
+          <div className='ContactFormBanner'data-aos="fade-down" data-aos-duration="3000"> My Projects</div>
+          <div className="DisplayLinksSection "data-aos="fade-down" data-aos-duration="3000">
+{/* NOTE THIS WILL BE MADE INTO ITS OWN PAGE. DUE TO BEING NOTIFIED OF CHANGES AN HOUR BEFORE THE PROJECT IS DUE (he wants to use mywebsite instead of making one off of wix) */}
+  <ul>
+    <li><a href="https://uncw4-my.sharepoint.com/:p:/g/personal/ccm4989_uncw_edu/EbIHi2fb5hhGpf3VcFTKw5cBYvOlid9tTwS_h-Clz0autQ?e=j5NyIc">Optic Gaming</a></li>
+    <li><a href="https://uncw4-my.sharepoint.com/:p:/g/personal/ccm4989_uncw_edu/EbPO5H5khO9KjRbHUJM-tTsBT9aZntiSfvwiXFd_c2Itzw?e=a9Y5TD">Scump</a></li>
+    <li><a href="https://uncw4-my.sharepoint.com/:p:/g/personal/ccm4989_uncw_edu/EXgIBc1BPpdJpsVwsrPyLLYBDvdI_xb12_QoBrQhL3A9Rw?e=XwHE2T">Call Of Duty</a></li>
+    {/* Add more links as needed */}
+  </ul>
+</div>
           {/* CONTACT FORM */}
           <AOSInitializer/>
           <div className='ContactFormBanner'data-aos="fade-down" data-aos-duration="3000"> Contact Me!</div>
@@ -74,11 +85,14 @@ function EsportsPage() {
 
               <div className="social-icons"data-aos="fade-up" data-aos-duration="3000">
                 <a href="mailto:cmooregaming9@gmail.com"><img src={mailIcon} alt="Email" /></a>
+                <a href="https://www.twitch.tv/cmooreplaz"><img src={TwitchIcon} alt="Icon" /></a>
+
                 <a href="tel:+18284343699" onClick={handleCall}><img src={phoneIcon} alt="Phone" /></a>
               </div>
               </div>
             </div>
           </div>
+          
           <div className="EsportsContactPage">
           <AOSInitializer/>
 
