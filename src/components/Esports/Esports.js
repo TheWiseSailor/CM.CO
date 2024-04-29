@@ -60,6 +60,13 @@ function EsportsPage() {
               <img src={ES1Image} alt="ES1" className='ES1-image' data-aos="fade-down" data-aos-duration="3000"/>
             </div>
           </div>
+          <div className='ContactFormBanner'data-aos="fade-down" data-aos-duration="3000"> My Goals</div>
+<div className='Goalz'>
+I aspire to pursue a career in the esports industry, a field that deeply resonates with my passion and interests.
+<p> My goal is to ascend the ranks and assume the role of a project manager within a prominent league or organization. </p>
+<p>Through dedication and perseverance, I aim to become an integral part of a community comprised of individuals who share my fervor and commitment to advancing the realm of esports.</p>
+
+</div>
           <div className='ContactFormBanner'data-aos="fade-down" data-aos-duration="3000"> My Projects</div>
           <div className="DisplayLinksSection "data-aos="fade-down" data-aos-duration="3000">
 {/* NOTE THIS WILL BE MADE INTO ITS OWN PAGE. DUE TO BEING NOTIFIED OF CHANGES AN HOUR BEFORE THE PROJECT IS DUE (he wants to use mywebsite instead of making one off of wix) */}
