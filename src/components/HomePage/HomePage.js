@@ -17,7 +17,7 @@ const HomePage = () => {
     let ticker = setInterval(() => tick(), delta);
     return () => clearInterval(ticker);
   }, [text, delta]);
-
+//add the resume link in
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
